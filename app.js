@@ -5,7 +5,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const REQUIRED = ['provider', 'product_name', 'country_name', 'data_gb', 'validity_days', 'price', 'network', 'top_up'];
 const files = new Map(); // nom du fichier -> lignes
 
-// Stockage local (IndexedDB) : les fichiers restent dans ce navigateur jusqu'à suppression
+// Stockage local  : les fichiers restent dans ce navigateur jusqu'à suppression
 const DB = (() => {
   let p;
   const open = () => p ||= new Promise((ok, ko) => {

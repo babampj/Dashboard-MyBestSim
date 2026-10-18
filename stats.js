@@ -1,4 +1,4 @@
-// Lecture des CSV et calcul des statistiques (aucun chiffre n'est pré-calculé)
+// Lecture des CSV et calcul des statistiques 
 function parseCSV(text) {
   text = text.replace(/^\uFEFF/, "");
   const rows = []; let row = [], cur = "", q = false;
