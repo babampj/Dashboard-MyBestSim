@@ -8,7 +8,10 @@
 </head>
 <body>
 <aside id="side" aria-label="Fichiers CSV" aria-hidden="true">
-<div class="sh"><h2>Fichiers CSV</h2><button class="ib" id="close" aria-label="Fermer">✕</button></div>
+<div class="sh">
+  <h2>Fichiers CSV</h2>
+  <button class="ib" id="close" aria-label="Fermer">✕</button>
+</div>
 <label class="dz" id="dz"><input type="file" id="inp" accept=".csv,text/csv" multiple hidden>
 <strong id="dzt">＋ Ajouter des CSV</strong>
 <span>Déposez-les ici ou cliquez · calculés dans votre navigateur, rien n'est envoyé à un serveur</span></label>
@@ -17,18 +20,57 @@
 </aside>
 <div id="ov" hidden></div>
 <main>
-<header class="hd"><button class="ib" id="menu" aria-label="Ouvrir les fichiers" aria-expanded="false">☰<b id="cnt" hidden></b></button>
-<div><h1>📊 Catalogue eSIM</h1><p class="s" id="sub">Ajoutez vos fichiers CSV pour générer les statistiques.</p></div></header>
-<div class="c em" id="empty"><strong>Aucun fichier pour le moment</strong><p>Ouvrez le menu ☰ ou glissez vos CSV sur la page.</p><button class="btn" id="open2">Ajouter des CSV</button></div>
+<header class="hd">
+  <button class="ib" id="menu" aria-label="Ouvrir les fichiers" aria-expanded="false">☰<b id="cnt" hidden></b></button>
+  <div class="hd-left">
+    <a href="https://mybestsim.com/fr/" target="_blank" rel="noopener" title="MyBestSim">
+      <img src="https://mybestsim.com/wp-content/uploads/2024/03/logo-removebg-preview-1.png" alt="MyBestSim" class="logo">
+    </a>
+    <div>
+      <h1>Catalogue eSIM · Dashboard</h1>
+      <p class="s" id="sub">Ajoutez vos fichiers CSV pour générer les statistiques.</p>
+    </div>
+  </div>
+</header>
+<div class="c em" id="empty">
+  <strong>Aucun fichier pour le moment</strong><p>Ouvrez le menu ☰ ou glissez vos CSV sur la page.</p>
+  <button class="btn" id="open2">Ajouter des CSV</button></div>
 <div id="dash" hidden>
 <div class="g" id="kpi"></div><div class="g" id="kpi2"></div>
 <div class="w">
-<div class="c"><h2>Cartes par fournisseur</h2><div id="prov"></div></div>
-<div class="c"><h2>Prix moyen par fournisseur (€)</h2><div id="avg"></div></div>
-<div class="c"><h2>Prix médian par Go (€) · hors illimité</h2><div id="ppg"></div></div>
-<div class="c"><h2>Top pays (nb de cartes)</h2><div id="ctry"></div><h2 style="margin-top:16px">Durées de validité (jours)</h2><div id="val"></div></div>
-<div class="c t"><h2>5 cartes les plus chères</h2><table id="top"></table></div>
+<div class="c">
+  <h2>Cartes par fournisseur</h2>
+  <div id="prov"></div>
+</div>
+<div class="c">
+  <h2>Prix moyen par fournisseur (€)</h2>
+  <div id="avg"></div>
+</div>
+<div class="c">
+  <h2>Prix médian par Go (€) · hors illimité</h2>
+  <div id="ppg">
+
+</div></div>
+<div class="c">
+  <h2>Top pays (nb de cartes)</h2>
+  <div id="ctry"></div>
+  <h2 style="margin-top:16px">Durées de validité (jours)</h2>
+   <div id="val"></div>
+</div>
+<div class="c t">
+  <h2>5 cartes les plus chères</h2>
+  <table id="top"></table>
+</div>
 </div></div></main>
+<footer class="ft">
+  <div class="ft-in">
+    <a class="ft-brand" href="https://mybestsim.com/fr/" target="_blank" rel="noopener">
+      <img src="https://mybestsim.com/wp-content/uploads/2024/03/logo-removebg-preview-1.png" alt="MyBestSim" class="logo">
+      <span>Économiser sur votre voyage, tout en vous simplifiant la vie</span>
+    </a>
+    <div class="ft-legal">© 2026 MyBestSim — Dashboard d'analyse du catalogue (démo technique).</div>
+  </div>
+</footer>
   <script src="stats.js"></script>
   <script src="embedded-csv.js"></script>
   <script src="app.js"></script>

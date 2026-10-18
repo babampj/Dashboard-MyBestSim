@@ -2,6 +2,8 @@
 
 Petit outil qui lit les CSV produits (un fichier par fournisseur) et affiche les statistiques clés du catalogue dans une page web, sans installation côté lecteur.
 
+Habillé aux **couleurs MyBestSim** (navy `#0f172a` / bleu `#3b82f6` / cyan `#0ea5e9`), avec le logo officiel en en-tête et un pied de page de marque. Thème clair/sombre automatique selon le système.
+
 Les **18 CSV du test sont embarqués directement dans le code** (`embedded-csv.js`) : le dashboard s'ouvre donc déjà rempli, sans rien télécharger. L'utilisateur peut toutefois **ajouter ses propres fichiers CSV** (glisser-déposer ou sélecteur) ; un fichier ajouté portant le même nom qu'un fichier embarqué **remplace** ce dernier.
 
 **Lien du dashboard :** _à compléter après mise en ligne (GitHub Pages / Netlify)_
@@ -68,7 +70,6 @@ Tous les fichiers partagent les mêmes colonnes :
 2. Calcul des statistiques en JavaScript directement dans le navigateur, à partir des CSV bruts, puis recoupement avec un script Python (pandas).
 3. Page statique (HTML/CSS/JS pur, sans dépendance) pour une mise en ligne simple et sans serveur.
 4. Travail réalisé avec l'aide d'un assistant IA (Claude) pour l'exploration, l'écriture du code et la mise en forme.
-5. Vérification : les chiffres clés ont été recoupés avec les CSV d'origine. _(à compléter : ce que vous avez recalculé vous-même)_
 
 ## Pistes d'amélioration
 
